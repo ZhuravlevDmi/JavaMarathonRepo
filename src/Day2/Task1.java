@@ -12,7 +12,7 @@ public class Task1 {
            System.out.println("Малоэтажный дом");
        else if(floor > 4 && floor < 9)
            System.out.println("Среднеэтажный дом");
-       else if(floor > 9)
+       else if(floor > 8)
            System.out.println("Многоэтажный дом");
        else
            System.out.println("Таких домов не бывает, ввод некорректный");

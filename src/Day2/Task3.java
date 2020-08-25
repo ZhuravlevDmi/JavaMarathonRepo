@@ -7,12 +7,11 @@ public class Task3 {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        int counter = a + 1;
 
-        while (counter < b)
-            if(counter % 5 == 0 && counter % 10 != 0)
-                System.out.print(counter + " ");
-        counter++;
+        while (a < b - 1) {
+            a++;
+            if (a % 5 == 0 && a % 10 != 0)
+                System.out.print(a + " ");
+        }
     }
 }
-

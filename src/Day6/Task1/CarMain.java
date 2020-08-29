@@ -1,38 +1,17 @@
 package Day6.Task1;
 
 public class CarMain {
-    private int yearManufacture;
-    private String color;
-    private String model;
-    void info(){
-        System.out.println("Это автомобиль");
-    }
+    public static void main(String[] args) {
+        Car car1 = new Car();
+        car1.setYearManufacture(2005);
+        car1.setColor("White");
+        car1.setModel("Corolla");
 
-    int ageDifference(int year){
-        return year - yearManufacture;
-    }
+        System.out.println("Год выпуска: " + car1.getYearManufacture());
+        System.out.println("Цвет автомобиля: " + car1.getColor());
+        System.out.println("Модель автомобиля: " + car1.getModel());
 
-    public int getYearManufacture() {
-        return yearManufacture;
-    }
-
-    public void setYearManufacture(int yearManufacture) {
-        this.yearManufacture = yearManufacture;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
+        car1.info();
+        System.out.println(car1.ageDifference(2020));
     }
 }

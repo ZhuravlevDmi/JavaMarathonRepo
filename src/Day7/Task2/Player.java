@@ -10,21 +10,23 @@ public class Player {
         this.stamina = stamina;
         if(stamina > MAX_STAMINA) stamina = MAX_STAMINA;
         if(stamina < MIN_STAMINA) stamina = MIN_STAMINA;
-        countPlayers++;
-        if(countPlayers > 6) countPlayers = 6;
+
+        if(countPlayers < 6)
+            countPlayers++;
     }
 
     void run(){
-        if(stamina == MIN_STAMINA)
+        if(stamina == MIN_STAMINA){
             System.out.println("Игрок не побежит, его уже нет на поле");
-        else if(stamina > MIN_STAMINA){
-            stamina--;
+            return;
+        }
+        stamina--;
             if(stamina == MIN_STAMINA){
                 System.out.println("Игрок выдохся и уходит с поля");
             countPlayers--;
             }
         }
-    }
+
 
     static void info(){
         if (countPlayers == 6){

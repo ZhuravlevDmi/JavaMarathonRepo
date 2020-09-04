@@ -23,7 +23,7 @@ public class Main {
 
         printList(musicBandArr);
 
-        merger(musicBandArr.get(0).getArtist(), musicBandArr.get(1).getArtist());
+        merger(musicBandArr.get(0), musicBandArr.get(1));
 
         printList(musicBandArr);
 
@@ -35,11 +35,11 @@ public class Main {
         }
         System.out.println();
     }
-    public static void merger(List<String> artistLeaves, List <String> comesArtist){
-        for (int i = 0; i < artistLeaves.size(); i++) {
-            comesArtist.add(artistLeaves.get(i));
+    public static void merger(MusicBand artistLeaves, MusicBand comesArtist){
+        for (int i = 0; i < artistLeaves.getArtist().size(); i++) {
+            comesArtist.getArtist().add(artistLeaves.getArtist().get(i));
         }
-        artistLeaves.clear();
+        artistLeaves.getArtist().clear();
     }
 }
 

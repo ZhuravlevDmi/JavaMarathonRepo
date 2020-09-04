@@ -59,16 +59,16 @@ public class Main {
 
         printArr(musicBandArr);
 
-        merger(musicBandArr.get(0).getArtist(), musicBandArr.get(1).getArtist());
+        merger(musicBandArr.get(0), musicBandArr.get(2));
 
         printArr(musicBandArr);
 
     }
-    public static void merger(List<Artist> artistLeaves, List <Artist> comesArtist){
-        for (int i = 0; i < artistLeaves.size(); i++) {
-            comesArtist.add(artistLeaves.get(i));
+    public static void merger(MusicBand artistLeaves, MusicBand comesArtist){
+        for (int i = 0; i < artistLeaves.getArtist().size(); i++) {
+            comesArtist.getArtist().add(artistLeaves.getArtist().get(i));
         }
-        artistLeaves.clear();
+        artistLeaves.getArtist().clear();
     }
 
     public static void printArr(List<MusicBand> list){

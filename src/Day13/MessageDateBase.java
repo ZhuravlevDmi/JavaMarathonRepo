@@ -1,6 +1,7 @@
 package Day13;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class MessageDateBase {
@@ -25,6 +26,10 @@ public class MessageDateBase {
         if(counter == 0)
             System.out.println("Сообщений между этими пользователями нет");
         System.out.println();
+    }
+
+    public static List<Message> getMessages() {
+        return messages;
     }
 }
 

@@ -20,10 +20,18 @@ public class Test {
         user3.sendMessage(user1, "Вечером встречаемся, с Петькой списывался?");
         user1.sendMessage(user3, "Да Васян, все ок!");
         user3.sendMessage(user1, "Лады, до вечера");
+        user3.sendMessage(user1, "Лады, до вечера1!");
+
+
 
         MessageDateBase.showDialog(user1, user2);
         MessageDateBase.showDialog(user1, user3);
         MessageDateBase.showDialog(user2, user3);
+
+
+
+
+
 
 
 

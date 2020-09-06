@@ -14,13 +14,14 @@ public class Message {
         this.sender = sender;
         this.receiver = receiver;
         this.text = text;
+        date = new Date();
     }
 
     @Override
     public String toString() {
-        return "FROM: " + sender.getUserName() + "/n" +
-               "TO: " + receiver.getUserName() + "/n" +
-                "ON: " + date +
+        return "FROM: " + sender.getUserName() + "\n" +
+               "TO: " + receiver.getUserName() + "\n" +
+                "ON: " + this.date + "\n" +
                 text;
     }
 

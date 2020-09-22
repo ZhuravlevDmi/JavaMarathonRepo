@@ -19,6 +19,6 @@ public class FieldEnemy extends AbstractField implements TranslationCoordinates{
         String coordinates = sc.nextLine();
         int x = coordinatesX(coordinates);
         int y = coordinatesY(coordinates);
-        if(enemy.getField().getField()[y][x] == "")
+        if(enemy.getField().getField()[y][x] == "");
     }
 }

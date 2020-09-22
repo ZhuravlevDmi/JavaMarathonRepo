@@ -3,6 +3,14 @@ package SeaBattle;
 public  abstract class AbstractField {
     private String[][] field = new String[12][12];
 
+    public AbstractField(){
+        for (int i = 0; i < field.length; i++) {
+            for (int j = 0; j < field.length; j++) {
+                field[i][j] = "⬜";
+            }
+        }
+        addNumberAndLetterOrField();
+    }
 
 
     public void addNumberAndLetterOrField() {

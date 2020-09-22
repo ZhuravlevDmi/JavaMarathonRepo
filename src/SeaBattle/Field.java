@@ -5,14 +5,14 @@ public class Field extends AbstractField {
 
 
 
-    public Field(){
-        for (int i = 0; i < field.length; i++) {
-            for (int j = 0; j < field.length; j++) {
-                field[i][j] = "⬜";
-            }
-        }
-       addNumberAndLetterOrField();
-    }
+//    public Field(){
+//        for (int i = 0; i < field.length; i++) {
+//            for (int j = 0; j < field.length; j++) {
+//                field[i][j] = "⬜";
+//            }
+//        }
+//       addNumberAndLetterOrField();
+//    }
 
 
 //    void print() {

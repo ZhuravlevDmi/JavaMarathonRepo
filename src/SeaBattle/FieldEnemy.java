@@ -2,7 +2,7 @@ package SeaBattle;
 
 import java.util.Scanner;
 
-public class FieldEnemy extends AbstractField implements TranslationCoordinates{
+public class FieldEnemy extends Field implements TranslationCoordinates{
     private Player enemy;
     private Field field;
     private String[][] fieldEnemy = new String[12][12];

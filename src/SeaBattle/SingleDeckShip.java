@@ -2,7 +2,7 @@ package SeaBattle;
 
 import java.util.Scanner;
 
-public class SingleDeckShip implements CreateShip, TranslationCoordinates{
+public class SingleDeckShip implements CreateShip, TranslationCoordinates, Checks{
 
 
     @Override

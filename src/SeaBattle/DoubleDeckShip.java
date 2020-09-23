@@ -4,7 +4,7 @@ import org.w3c.dom.ls.LSOutput;
 
 import java.util.Scanner;
 
-public class DoubleDeckShip implements CreateShip, TranslationCoordinates{
+public class DoubleDeckShip implements CreateShip, TranslationCoordinates, Checks{
 
     //в утиль
 //    @Override
